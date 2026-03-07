@@ -1,4 +1,6 @@
-package bubble
+//go:build ignore
+
+package main
 
 import (
 	"fmt"
