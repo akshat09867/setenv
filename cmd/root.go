@@ -13,7 +13,6 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "setenv",
 	Short: "Interactive onboarding and environment fixer",
-	Long:  "Automates the building of  environment by",
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
