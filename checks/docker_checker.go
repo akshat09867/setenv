@@ -12,7 +12,7 @@ import (
 func Checkdocker(ctx context.Context) (string, error) {
 	path, err := exec.LookPath("docker")
 	if err != nil {
-		return "", errors.New("Docker not found in PATH")
+		return "", errors.New("docker not found in PATH")
 	}
 	cctx, cancel := context.WithTimeout(ctx, 3*time.Second)
 	defer cancel()

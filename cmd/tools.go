@@ -27,10 +27,6 @@ func NewToolsCommand() *cobra.Command {
 			if !ok {
 				return fmt.Errorf("unexpected model type after TUI exit")
 			}
-			var RoleSelected []string
-			for idx := range m.RoleChoices {
-				RoleSelected = append(RoleSelected, m.RoleChoices[idx])
-			}
 			var selected []string
 			for idx := range m.Selected {
 				selected = append(selected, m.Choices[idx])
@@ -43,9 +39,6 @@ func NewToolsCommand() *cobra.Command {
 			fmt.Println("\nSelected tools:")
 			for _, item := range selected {
 				fmt.Printf("  • %s\n", item)
-			}
-			for _, v := range RoleSelected {
-				selectRole(v)
 			}
 			for _, v := range selected {
 				checkTool(v)
