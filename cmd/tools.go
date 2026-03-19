@@ -5,7 +5,7 @@ import (
 
 	"setenv/tui/bubble"
 
-	tea "charm.land/bubbletea/v2"
+	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"
 )
 
